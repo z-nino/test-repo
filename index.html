@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portals | Twine example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="dialogue-thumb">
+        <img
+          class="thumbnail"
+          src="https://cdn.glitch.global/0079d299-bbce-43ce-80df-87673e8bc310/moto-2.gif?v=1666322235535"
+        />
+      </div>
+      <div class="dialogue-wrap">
+        <iframe name="iframe" id="iframe" height="300px" width="480px" frameborder="0" style="display: none">
+          
+        </iframe>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+</html>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const start = params.get('start');
+  let twineUrl = "./twine-page.html";
+  if(start){
+    twineUrl += "?start="+start;
+  }
+  document.getElementById("iframe").src = twineUrl;
+  setTimeout(() => {
+    document.getElementById("iframe").style.display = "block";
+  }, 600);
+</script>
