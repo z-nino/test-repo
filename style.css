@@ -1,0 +1,108 @@
+ @font-face {
+        font-family: "Graphik";
+        src: url("https://cdn.glitch.global/a3594891-7fe6-4b1d-93ad-a72d098272ff/Graphik-300-Light.otf?v=1654195494773");
+      }
+      body,
+      html {
+        background: #1b1b20;
+        overflow: hidden;
+        color: #fff;
+        font-family: "Graphik", sans-serif;
+      }
+
+      body {
+        padding: 20px;
+      }
+
+      .wrapper {
+        display: block;
+      }
+
+      .dialogue-thumb {
+        float: left;
+        width: 20vw;
+        height: 400px;
+      }
+
+      .thumbnail {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        object-fit:cover;
+        border-radius:50%
+      }
+
+      .dialogue-wrap {
+        float: left;
+        width: 65vw;
+        padding-left: 2vw;
+      }
+
+      #dialogue {
+        font-weight: 300;
+        font-size: 2vw;
+        line-height: 3vw;
+      }
+      .butan {
+        width: 30vw;
+        height: 3vw;
+        /* background-color: #1cc8ff; */
+        background-color: black;
+        position: absolute;
+        right: 1vw;
+        bottom: 3vw;
+        text-align: center;
+        padding-top: 1vw;
+        border-radius: 15px;
+        color: white;
+        font-family: "Graphik", sans-serif;
+        font-size: 2vw;
+        font-weight: bold;
+      }
+
+      .butan:hover {
+        background-color: grey;
+      }
+
+      .options-wrapper {
+        position: absolute;
+        width: 65vw;
+        right: 1vw;
+        bottom: 3vw;
+        cursor:pointer;
+      }
+
+    .options-wrapper.full .options{
+      width: 100%;
+    }
+
+      .options {
+        width: 30vw;
+        height: 3vw;
+        background-color: black;
+        text-align: center;
+        color: white;
+        padding-top: 1vw;
+        border-radius: 15px;
+        color: white;
+        font-family: "Graphik", sans-serif;
+        font-size: 2vw;
+        font-weight: bold;
+        margin-bottom: 1vw;
+        float: right;
+        margin-right: 2vw;
+      }
+      
+      .options-tree-1 {
+        display: none;
+      }
+      
+      #back-button {
+        display: none;
+      }
+
+      .options:hover {
+        background-color: grey;
+      }
+
